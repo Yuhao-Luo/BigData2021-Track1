@@ -1,5 +1,7 @@
-# track1
+# Track 1
 This is my first attempt to take part in a Kaggle competition:[industrial recommendation systems](https://www.kaggle.com/c/bigdata2021-rl-recsys/overview)
+Our paper are published on [IEEE Xplore](https://ieeexplore.ieee.org/document/9671558)
+
 # Introduction
 According to the competition page, We are offering an online item recommendation service in a game. This item recommendation task is characterized by its mid-dimensional action spaces (roughly 400 item candidates after reducing) and special interaction rules. As is shown in figure, for each user request, the recommendation engine will respond with 3 item lists (3 items per list), and the next item list is locked until the items of the current list are sold out. The users' response depends on not only the current item but also the items of the next list. This item recommendation problem can be naturally formalized as a multi-step decision-making problem in which the agent recommends an item or an item list in each step.
 ![Figure 1](https://cdn.mathpix.com/snip/images/B7jiRX-xCB3DJlnhPM_5nvGni6026PchMu0HCKBpIiM.original.fullsize.png)
@@ -22,3 +24,13 @@ Item price.*9 columns*
 Add up the item class in click history as user's interested class, calculate the cosine distance between it and exposed item class.*9 columns*
 # Model
 LightGBM 
+# Citation
+@INPROCEEDINGS{9671558,
+  author={Luo, Yuhao and Xu, Qianfang and Li, Wenliang and Jiang, Feng and Xiao, Bo},
+  booktitle={2021 IEEE International Conference on Big Data (Big Data)}, 
+  title={A multi-step decision prediction model based on LightGBM}, 
+  year={2021},
+  volume={},
+  number={},
+  pages={5714-5718},
+  doi={10.1109/BigData52589.2021.9671558}}
